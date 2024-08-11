@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f14cb97d-b9ad-46e8-9462-9eabadedc64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Math">
+      <UniqueIdentifier>{903b9a8e-fe2c-4f95-b49a-471dbd0319f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System">
+      <UniqueIdentifier>{1f48cb2a-5803-4d4e-b795-b64406fef617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Animation">
+      <UniqueIdentifier>{dee6388b-603e-45ee-a21e-eae3d7733d5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System\src">
+      <UniqueIdentifier>{ab3c28f2-0b9d-45af-883d-0dd051d63c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Animation\src">
+      <UniqueIdentifier>{8ac559f4-c3df-4439-8381-b162aeca433d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application">
+      <UniqueIdentifier>{9464b4bc-5427-4a7d-86b6-a09640f57b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\src">
+      <UniqueIdentifier>{3f7eaef9-edd0-4ce1-8373-1ea601ccc65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Utils">
+      <UniqueIdentifier>{08c8529b-ef96-4997-bb54-853163a591d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GL">
+      <UniqueIdentifier>{856400c2-f28f-4e03-8eae-70a833f5c4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\MotionPlanning">
+      <UniqueIdentifier>{f7a075bd-0ba7-434a-9605-dbd3dd928915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\MotionPlanning\src">
+      <UniqueIdentifier>{3970c7c0-a468-4d3f-99b1-5f9a19406daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{aaa71d64-a11c-49fc-b95a-c1a6b54a1280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Example">
+      <UniqueIdentifier>{a6136c07-1672-42d9-bb40-dfb7a02931a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HelperGL [OpenGL 1.0-2.0]">
+      <UniqueIdentifier>{a495c87e-f15e-4214-9985-2b264ae37bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HelperGL [OpenGL 1.0-2.0]\src">
+      <UniqueIdentifier>{464774f3-42c5-4654-917a-654a8bb11d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SceneGraph [OpenGL 1.0-2.0]">
+      <UniqueIdentifier>{3b473c98-e6ed-456f-a3c6-c14885b3a423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SceneGraph [OpenGL 1.0-2.0]\src">
+      <UniqueIdentifier>{5792f0f6-de7d-4cb4-b206-5cc6e5ec9caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gl3 [OpenGL 3.3]">
+      <UniqueIdentifier>{bf6cad4e-4030-43ee-832d-32ec49b1104e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gl3 [OpenGL 3.3]\internal">
+      <UniqueIdentifier>{ff364660-a328-4c2d-9b73-6dc8b67d15ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Phong">
+      <UniqueIdentifier>{af773aec-b7b7-466f-bdb7-b0fbe61c8981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Postprocessing">
+      <UniqueIdentifier>{5e11c93a-2f08-449b-9fbb-4a585daeb22f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\HelperGl\src\Text.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\MeshVBO_v2.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\PhongShader.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\Draw.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\Loader3ds.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\Mesh.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\shader.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\TextureServer.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\VBO.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\src\Path.cpp">
+      <Filter>src\System\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Sphere.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Cylinder.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\InverseKinematics.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\src\Base.cpp">
+      <Filter>src\Application\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main_application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\src\Menu.cpp">
+      <Filter>src\Application\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\src\ApplicationSelection.cpp">
+      <Filter>src\Application\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\ParticleSystemNode.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\SpringMassSystem.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\KinematicChain.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Patch.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\Camera.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\Particle.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\ParticleSystem.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\Physics.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Animation\src\PonctualMass.cpp">
+      <Filter>src\Animation\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\CoordinateSystem.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Cylinder%3bcpp.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\DisplayList.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\EulerRoration.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Group.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\MeshVBO.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\PointRenderer.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Rotate.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Scale.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\SGMesh.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneGraph\src\Translate.cpp">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\LaoderAssimp.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MotionPlanning\src\CollisionManager.cpp">
+      <Filter>src\MotionPlanning\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MotionPlanning\src\SixDofPlannerBase.cpp">
+      <Filter>src\MotionPlanning\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelperGl\src\ShaderProgram.cpp">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Math\Vector.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGL\LightServer.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\TextureServer.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Loader3ds.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Mesh.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Material.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Color.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Path.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Draw.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Mesh.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\NodeInterface.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\DisplayList.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Group.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Translate.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Transform.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Rotate.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Scale.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Matrix4x4.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Text.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\MeshVBO.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\VBO.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\MeshVBO_v2.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Vectorf.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Matrix4x4f.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Shader.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Buffer.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\PhongShader.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\Particle.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\ParticleSystem.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Interval.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Sampler.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Interpolation.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Quaternion.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\PointRenderer.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Sphere.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Cylinder.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\InverseKinematics.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\finite.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Base.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Menu.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\ApplicationSelection.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\ParticleSystemNode.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\EulerRotation.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\Constant.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\SpringMassSystem.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Utils\History.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\KinematicChain.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GL\compatibility.h">
+      <Filter>src\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\CoordinateSystem.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneGraph\Patch.h">
+      <Filter>src\SceneGraph [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\Camera.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\KeyboardStatus.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\BaseWithKeyboard.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\PonctualMass.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\Physics.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\converter.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\CollisionManager.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\UniformRandom.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\LoaderAssimp.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerRRT.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerBase.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerBiRRT.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MotionPlanning\VPTree.h">
+      <Filter>src\MotionPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelperGl\ShaderProgram.h">
+      <Filter>src\HelperGL [OpenGL 1.0-2.0]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ElementBufferObject.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\VertexBufferObject.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\VertexArrayObject.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\TypeTraits.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\Camera.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\TransformStack.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\internal\IncludeParser.h">
+      <Filter>src\gl3 [OpenGL 3.3]\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ShaderSource.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\Shader.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ShaderProgram.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\Mesh.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\PhongMaterial.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\Texture2D.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\TextureServer.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\FrameBufferObject.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\RenderBuffer.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\SearchPaths.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\MeshLoader.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ShaderConfig.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ConventionalShaderProgram.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\PackedVertexBufferObject.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\AttribPointerProxy.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ScreenQuad2D.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\FrameBuffer.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\enums.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\utils.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\GBuffer.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\printer.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\ViewFrustum.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\CubeMap.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\GL3_TP_skeleton.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\GL3_TP1.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gl3\GlobalState.h">
+      <Filter>src\gl3 [OpenGL 3.3]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Helpers.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\GL3_TP2.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\TP1_siaa.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math\SphericalCoordinates.h">
+      <Filter>src\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Insect.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HermitInterp.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\TrajectoryInterp.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\GL3_TP3.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\TP2_siaa.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Animation\CCD.h">
+      <Filter>src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\TP3_siaa.h">
+      <Filter>src\Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\Shaders\Example\nothing.vert">
+      <Filter>Shaders\Example</Filter>
+    </None>
+    <None Include="..\data\Shaders\Example\nothing.frag">
+      <Filter>Shaders\Example</Filter>
+    </None>
+    <None Include="..\data\Shaders\base.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\red.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\phong.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\phong.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\Phong\Phong.frag">
+      <Filter>Shaders\Phong</Filter>
+    </None>
+    <None Include="..\data\Shaders\Phong\Phong.vert">
+      <Filter>Shaders\Phong</Filter>
+    </None>
+    <None Include="..\data\Shaders\PhongDirectional.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\PhongDirectional.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\Skybox.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\Skybox.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\data\Shaders\Postprocessing\Fullscreen.vert">
+      <Filter>Shaders\Postprocessing</Filter>
+    </None>
+    <None Include="..\data\Shaders\Postprocessing\CellShading.frag">
+      <Filter>Shaders\Postprocessing</Filter>
+    </None>
+    <None Include="..\data\Shaders\Postprocessing\DepthOfField.frag">
+      <Filter>Shaders\Postprocessing</Filter>
+    </None>
+  </ItemGroup>
+</Project>

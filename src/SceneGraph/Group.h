@@ -1,0 +1,82 @@
+#ifndef _SceneGraph_Group_H
+#define _SceneGraph_Group_H
+
+#include <SceneGraph/NodeInterface.h>
+#include <vector>
+#include <algorithm>
+
+namespace SceneGraph
+{
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// \class	Group
+	///
+	/// \brief	Group node that can have has many sons as needed.
+	///
+	/// \author	F. Lamarche, Université de Rennes 1
+	/// \date	01/12/2015
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	class Group : public virtual NodeInterface
+	{
+	protected:
+		/// \brief	The sons.
+		::std::vector<NodeInterface*> m_sons ;
+				
+	public:
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		/// \fn	Group::Group()
+		///
+		/// \brief	Default constructor.
+		///
+		/// \author	F. Lamarche, Université de Rennes 1
+		/// \date	01/12/2015
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		Group()
+		{}
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		/// \fn	virtual void Group::addSon(NodeInterface * son)
+		///
+		/// \brief	Adds a son.
+		///
+		/// \author	F. Lamarche, Université de Rennes 1
+		/// \date	01/12/2015
+		///
+		/// \param [in,out]	son	If non-null, the son.
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		virtual void addSon(NodeInterface * son)
+		{
+			m_sons.push_back(son) ;
+		}
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		/// \fn	virtual void Group::removeSon(NodeInterface * son)
+		///
+		/// \brief	Removes a son.
+		///
+		/// \author	F. Lamarche, Université de Rennes 1
+		/// \date	01/12/2015
+		///
+		/// \param [in,out]	son	If non-null, the son.
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		virtual void removeSon(NodeInterface * son)
+		{
+			m_sons.erase(::std::find(m_sons.begin(), m_sons.end(), son)) ;
+		}
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		/// \fn	virtual void Group::draw()
+		///
+		/// \brief	Draws this node.
+		///
+		/// \author	F. Lamarche, Université de Rennes 1
+		/// \date	01/12/2015
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		virtual void draw()
+		{
+			::std::for_each(m_sons.begin(), m_sons.end(), [](NodeInterface * node) { node->draw() ; }) ;
+		}
+	};
+}
+
+#endif

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14B5A19F-7881-485B-9E35-1FD14662FD8F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TP_IMA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;GLEW_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)/../src;$(ProjectDir)/../../SOIL/src;$(AnimRenduDep)/SOIL/src;$(ProjectDir)/../../freeglut-3.0.0/include;$(AnimRenduDep)/freeglut-3.0.0/include;$(ProjectDir)/../../lib3ds-1.3.0/;$(AnimRenduDep)/lib3ds-1.3.0/;$(ProjectDir)/../../glew-1.13.0\include;$(AnimRenduDep)/glew-1.13.0\include;$(ProjectDir)/../../tbb/include;$(AnimRenduDep)/tbb/include;$(ProjectDir)/../../eigen;$(ProjectDir)/../../rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32s.lib;soil.lib;lib3ds.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/../../tbb/lib/ia32/vc10;$(SolutionDir)$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;GLEW_STATIC;WIN32;_DEBUG;_CONSOLE;_DISABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(AnimRenduDep)/include;$(ProjectDir)/../src;$(ProjectDir)/../../SOIL/src;$(AnimRenduDep)/SOIL/src;$(ProjectDir)/../../freeglut-3.0.0/include;$(AnimRenduDep)/freeglut-3.0.0/include;$(ProjectDir)/../../lib3ds-1.3.0/;$(AnimRenduDep)/lib3ds-1.3.0/;$(ProjectDir)/../../glew-1.13.0\include;$(AnimRenduDep)/glew-1.13.0\include;$(ProjectDir)/../../tbb/include;$(AnimRenduDep)/tbb/include;$(ProjectDir)/../../eigen;$(ProjectDir)/../../rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fcl.lib;assimp-vc140-mt.lib;glew32sd.lib;soil.lib;lib3ds.lib;tbb_debug.lib;ccd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(AnimRenduDep)/lib/$(Configuration);$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(AnimRenduDep)/copyDllDebug.bat $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;GLEW_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)/../src;$(ProjectDir)/../../SOIL/src;$(AnimRenduDep)/SOIL/src;$(ProjectDir)/../../freeglut-3.0.0/include;$(AnimRenduDep)/freeglut-3.0.0/include;$(ProjectDir)/../../lib3ds-1.3.0/;$(AnimRenduDep)/lib3ds-1.3.0/;$(ProjectDir)/../../glew-1.13.0\include;$(AnimRenduDep)/glew-1.13.0\include;$(ProjectDir)/../../tbb/include;$(AnimRenduDep)/tbb/include;$(ProjectDir)/../../eigen;$(ProjectDir)/../../rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <Parallelization>true</Parallelization>
+      <GenerateAlternateCodePaths>AVX</GenerateAlternateCodePaths>
+      <UseProcessorExtensions>AVX</UseProcessorExtensions>
+      <CheckUndimensionedArrays>true</CheckUndimensionedArrays>
+      <Cpp0xSupport>true</Cpp0xSupport>
+      <EnableAnsiAliasing>true</EnableAnsiAliasing>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;soil.lib;lib3ds.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/../../tbb/lib/ia32/vc14;$(SolutionDir)$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;GLEW_STATIC;WIN32;NDEBUG;_CONSOLE;_DISABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(AnimRenduDep)/include;$(ProjectDir)/../src;$(ProjectDir)/../../SOIL/src;$(AnimRenduDep)/SOIL/src;$(ProjectDir)/../../freeglut-3.0.0/include;$(AnimRenduDep)/freeglut-3.0.0/include;$(ProjectDir)/../../lib3ds-1.3.0/;$(AnimRenduDep)/lib3ds-1.3.0/;$(ProjectDir)/../../glew-1.13.0\include;$(AnimRenduDep)/glew-1.13.0\include;$(ProjectDir)/../../tbb/include;$(AnimRenduDep)/tbb/include;$(ProjectDir)/../../eigen;$(ProjectDir)/../../rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <Parallelization>true</Parallelization>
+      <GenerateAlternateCodePaths>AVX</GenerateAlternateCodePaths>
+      <UseProcessorExtensions>AVX</UseProcessorExtensions>
+      <CheckUndimensionedArrays>true</CheckUndimensionedArrays>
+      <Cpp0xSupport>true</Cpp0xSupport>
+      <EnableAnsiAliasing>true</EnableAnsiAliasing>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>assimp-vc140-mt.lib;glew32s.lib;soil.lib;lib3ds.lib;tbb.lib;ccd.lib;fcl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(AnimRenduDep)/lib/$(Configuration);$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(AnimRenduDep)/copyDll.bat $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Animation\src\InverseKinematics.cpp" />
+    <ClCompile Include="..\src\Animation\src\KinematicChain.cpp" />
+    <ClCompile Include="..\src\Animation\src\Particle.cpp" />
+    <ClCompile Include="..\src\Animation\src\ParticleSystem.cpp" />
+    <ClCompile Include="..\src\Animation\src\Physics.cpp" />
+    <ClCompile Include="..\src\Animation\src\PonctualMass.cpp" />
+    <ClCompile Include="..\src\Animation\src\SpringMassSystem.cpp" />
+    <ClCompile Include="..\src\Application\src\ApplicationSelection.cpp" />
+    <ClCompile Include="..\src\Application\src\Base.cpp" />
+    <ClCompile Include="..\src\Application\src\Menu.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\Camera.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\Draw.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\LaoderAssimp.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\Loader3ds.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\Mesh.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\PhongShader.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\shader.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\ShaderProgram.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\Text.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\TextureServer.cpp" />
+    <ClCompile Include="..\src\HelperGl\src\VBO.cpp" />
+    <ClCompile Include="..\src\main_application.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\MotionPlanning\src\CollisionManager.cpp" />
+    <ClCompile Include="..\src\MotionPlanning\src\SixDofPlannerBase.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\CoordinateSystem.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Cylinder%3bcpp.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Cylinder.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\DisplayList.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\EulerRoration.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Group.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\MeshVBO.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\MeshVBO_v2.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\ParticleSystemNode.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Patch.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\PointRenderer.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Rotate.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Scale.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\SGMesh.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Sphere.cpp" />
+    <ClCompile Include="..\src\SceneGraph\src\Translate.cpp" />
+    <ClCompile Include="..\src\System\src\Path.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Animation\CCD.h" />
+    <ClInclude Include="..\src\Animation\InverseKinematics.h" />
+    <ClInclude Include="..\src\Animation\KinematicChain.h" />
+    <ClInclude Include="..\src\Animation\Particle.h" />
+    <ClInclude Include="..\src\Animation\ParticleSystem.h" />
+    <ClInclude Include="..\src\Animation\Physics.h" />
+    <ClInclude Include="..\src\Animation\PonctualMass.h" />
+    <ClInclude Include="..\src\Animation\SpringMassSystem.h" />
+    <ClInclude Include="..\src\Application\ApplicationSelection.h" />
+    <ClInclude Include="..\src\Application\Base.h" />
+    <ClInclude Include="..\src\Application\BaseWithKeyboard.h" />
+    <ClInclude Include="..\src\Application\GL3_TP1.h" />
+    <ClInclude Include="..\src\Application\GL3_TP2.h" />
+    <ClInclude Include="..\src\Application\GL3_TP3.h" />
+    <ClInclude Include="..\src\Application\GL3_TP_skeleton.h" />
+    <ClInclude Include="..\src\Application\Helpers.h" />
+    <ClInclude Include="..\src\Application\HermitInterp.h" />
+    <ClInclude Include="..\src\Application\Insect.h" />
+    <ClInclude Include="..\src\Application\KeyboardStatus.h" />
+    <ClInclude Include="..\src\Application\Menu.h" />
+    <ClInclude Include="..\src\Application\TP1_siaa.h" />
+    <ClInclude Include="..\src\Application\TP2_siaa.h" />
+    <ClInclude Include="..\src\Application\TP3_siaa.h" />
+    <ClInclude Include="..\src\Application\TrajectoryInterp.h" />
+    <ClInclude Include="..\src\Config.h" />
+    <ClInclude Include="..\src\gl3\AttribPointerProxy.h" />
+    <ClInclude Include="..\src\gl3\Camera.h" />
+    <ClInclude Include="..\src\gl3\ConventionalShaderProgram.h" />
+    <ClInclude Include="..\src\gl3\CubeMap.h" />
+    <ClInclude Include="..\src\gl3\ElementBufferObject.h" />
+    <ClInclude Include="..\src\gl3\enums.h" />
+    <ClInclude Include="..\src\gl3\FrameBuffer.h" />
+    <ClInclude Include="..\src\gl3\FrameBufferObject.h" />
+    <ClInclude Include="..\src\gl3\GBuffer.h" />
+    <ClInclude Include="..\src\gl3\GlobalState.h" />
+    <ClInclude Include="..\src\gl3\PackedVertexBufferObject.h" />
+    <ClInclude Include="..\src\gl3\internal\IncludeParser.h" />
+    <ClInclude Include="..\src\gl3\MeshLoader.h" />
+    <ClInclude Include="..\src\gl3\Mesh.h" />
+    <ClInclude Include="..\src\gl3\PhongMaterial.h" />
+    <ClInclude Include="..\src\gl3\printer.h" />
+    <ClInclude Include="..\src\gl3\RenderBuffer.h" />
+    <ClInclude Include="..\src\gl3\ScreenQuad2D.h" />
+    <ClInclude Include="..\src\gl3\Shader.h" />
+    <ClInclude Include="..\src\gl3\ShaderConfig.h" />
+    <ClInclude Include="..\src\gl3\ShaderProgram.h" />
+    <ClInclude Include="..\src\gl3\ShaderSource.h" />
+    <ClInclude Include="..\src\gl3\Texture2D.h" />
+    <ClInclude Include="..\src\gl3\TextureServer.h" />
+    <ClInclude Include="..\src\gl3\TransformStack.h" />
+    <ClInclude Include="..\src\gl3\TypeTraits.h" />
+    <ClInclude Include="..\src\gl3\utils.h" />
+    <ClInclude Include="..\src\gl3\VertexArrayObject.h" />
+    <ClInclude Include="..\src\gl3\VertexBufferObject.h" />
+    <ClInclude Include="..\src\gl3\ViewFrustum.h" />
+    <ClInclude Include="..\src\GL\compatibility.h" />
+    <ClInclude Include="..\src\HelperGl\Buffer.h" />
+    <ClInclude Include="..\src\HelperGl\Camera.h" />
+    <ClInclude Include="..\src\HelperGl\Color.h" />
+    <ClInclude Include="..\src\HelperGl\Draw.h" />
+    <ClInclude Include="..\src\HelperGL\LightServer.h" />
+    <ClInclude Include="..\src\HelperGl\Loader3ds.h" />
+    <ClInclude Include="..\src\HelperGl\LoaderAssimp.h" />
+    <ClInclude Include="..\src\HelperGl\Material.h" />
+    <ClInclude Include="..\src\HelperGl\Mesh.h" />
+    <ClInclude Include="..\src\HelperGl\PhongShader.h" />
+    <ClInclude Include="..\src\HelperGl\Shader.h" />
+    <ClInclude Include="..\src\HelperGl\ShaderProgram.h" />
+    <ClInclude Include="..\src\HelperGl\Text.h" />
+    <ClInclude Include="..\src\HelperGl\TextureServer.h" />
+    <ClInclude Include="..\src\HelperGl\VBO.h" />
+    <ClInclude Include="..\src\Math\Constant.h" />
+    <ClInclude Include="..\src\Math\finite.h" />
+    <ClInclude Include="..\src\Math\Interpolation.h" />
+    <ClInclude Include="..\src\Math\Interval.h" />
+    <ClInclude Include="..\src\Math\Matrix4x4.h" />
+    <ClInclude Include="..\src\Math\Matrix4x4f.h" />
+    <ClInclude Include="..\src\Math\Quaternion.h" />
+    <ClInclude Include="..\src\Math\Sampler.h" />
+    <ClInclude Include="..\src\Math\SphericalCoordinates.h" />
+    <ClInclude Include="..\src\Math\UniformRandom.h" />
+    <ClInclude Include="..\src\Math\Vector.h" />
+    <ClInclude Include="..\src\Math\Vectorf.h" />
+    <ClInclude Include="..\src\MotionPlanning\CollisionManager.h" />
+    <ClInclude Include="..\src\MotionPlanning\converter.h" />
+    <ClInclude Include="..\src\MotionPlanning\VPTree.h" />
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerBase.h" />
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerBiRRT.h" />
+    <ClInclude Include="..\src\MotionPlanning\SixDofPlannerRRT.h" />
+    <ClInclude Include="..\src\SceneGraph\CoordinateSystem.h" />
+    <ClInclude Include="..\src\SceneGraph\Cylinder.h" />
+    <ClInclude Include="..\src\SceneGraph\DisplayList.h" />
+    <ClInclude Include="..\src\SceneGraph\EulerRotation.h" />
+    <ClInclude Include="..\src\SceneGraph\Group.h" />
+    <ClInclude Include="..\src\SceneGraph\Mesh.h" />
+    <ClInclude Include="..\src\SceneGraph\MeshVBO.h" />
+    <ClInclude Include="..\src\SceneGraph\MeshVBO_v2.h" />
+    <ClInclude Include="..\src\SceneGraph\NodeInterface.h" />
+    <ClInclude Include="..\src\SceneGraph\ParticleSystemNode.h" />
+    <ClInclude Include="..\src\SceneGraph\Patch.h" />
+    <ClInclude Include="..\src\SceneGraph\PointRenderer.h" />
+    <ClInclude Include="..\src\SceneGraph\Rotate.h" />
+    <ClInclude Include="..\src\SceneGraph\Scale.h" />
+    <ClInclude Include="..\src\SceneGraph\Sphere.h" />
+    <ClInclude Include="..\src\SceneGraph\Transform.h" />
+    <ClInclude Include="..\src\SceneGraph\Translate.h" />
+    <ClInclude Include="..\src\System\Path.h" />
+    <ClInclude Include="..\src\System\SearchPaths.h" />
+    <ClInclude Include="..\src\Utils\History.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\Shaders\base.vert" />
+    <None Include="..\data\Shaders\Example\nothing.frag" />
+    <None Include="..\data\Shaders\Example\nothing.vert" />
+    <None Include="..\data\Shaders\phong.frag" />
+    <None Include="..\data\Shaders\phong.vert" />
+    <None Include="..\data\Shaders\PhongDirectional.frag" />
+    <None Include="..\data\Shaders\PhongDirectional.vert" />
+    <None Include="..\data\Shaders\Phong\Phong.frag" />
+    <None Include="..\data\Shaders\Phong\Phong.vert" />
+    <None Include="..\data\Shaders\Postprocessing\CellShading.frag" />
+    <None Include="..\data\Shaders\Postprocessing\DepthOfField.frag" />
+    <None Include="..\data\Shaders\Postprocessing\Fullscreen.vert" />
+    <None Include="..\data\Shaders\red.frag" />
+    <None Include="..\data\Shaders\Skybox.frag" />
+    <None Include="..\data\Shaders\Skybox.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
