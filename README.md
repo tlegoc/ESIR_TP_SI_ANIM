@@ -4,6 +4,59 @@ This git repository contains all results for TP 1-3 of Anim and TP 1-3 of SI
 
 These projects use OpenGL for rendering, and are built over the teacher's base code.
 
+## Anim
+
+### Project 1
+
+The first anim project zas an introduction to the scene graph and quaternion/vector interpolation. We had to create a bee (sort of) and animate it only using parent/child hierachy.
+
+Files :
+ - src/Application/HermitInterp.h
+ - src/Application/TrajectoryInterp.h
+ - src/Application/Insect.h
+ - src/Application/TP1_siaa.h
+
+Controls :
+  - ZQSD : Forward/Left/Back/Right
+  - AE : Up/Down
+
+![image](https://github.com/user-attachments/assets/e4dfd985-a51b-4f2c-8afa-010f4e84877a)
+
+### Project 2
+
+Inverse kinematic implementation on a variable size chain.
+
+Files :
+ - src/Animation/CCD.h
+ - src/Application/TP2_siaa.h
+
+Controls :
+- ZQSD : Up/Left/Down/Right
+- R/F : Forward/Backward
+- Y/H : Pitch axis
+- G/J : Yaw axis
+- N : Randomize target position
+
+![image](https://github.com/user-attachments/assets/21a9bb8a-8522-4f46-915a-18fbcd869f6e)
+
+### Project 3
+
+Implementation of a cloth using a spring mass system, and basic collision responses. Support 4 and 8 neighbours systems.
+
+Files :
+ - Animation/Physics.h (partially, forgot what I did)
+ - Animation/SpringMassSystem.h (partially, forgot what I did)
+ - src/Application/TP3_siaa.h
+
+Controls :
+- ZQSD : Up/Left/Down/Right
+- R/F : Forward/Backward
+- Y/H : Pitch axis
+- G/J : Yaw axis
+- C : Unlock one of the corners
+
+![image](https://github.com/user-attachments/assets/d550d51c-7284-441d-b864-d70b78dce6f4)
+
 ## SI
 
 ### Project 1
